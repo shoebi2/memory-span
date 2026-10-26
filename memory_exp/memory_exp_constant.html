@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="memory.css">
+    <title>memory_constant</title>
+  </head>
+  <body>
+    <div id="resume" hidden></div>
+    <div id="setup" class="center">
+      <h1>input range</h1>
+      <p><input id="min" type="number" inputmode="numeric"> ~ <input id="max" type="number" inputmode="numeric" min="0"> 桁</p>
+      <p>各桁ごとに <input id="trialsPerDifficulty" type="number" inputmode="numeric"> 試行ずつ</p>
+      <p><button id="start" class="primary">実験開始</button></p>
+      <ul id="errors" class="errors"></ul>
+      <p id="nomemcap" class="note" hidden>（このブラウザには実験1の結果が見つからないため、桁数の計算までは確認していません。入力した値をもう一度確かめてください）</p>
+    </div>
+    <main id="main" class="center" hidden>
+      <h1>memory experiment</h1>
+      <h2 id="stimulus" class="disable-copy"></h2>
+      <input id="js-input-form" type="text" inputmode="numeric" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" readonly>
+      <p id="warn" class="warn"></p>
+    </main>
+    <div id="result"></div>
+    <script src="helpers_2019.js"></script>
+    <script src="core.js"></script>
+    <script src="constant.js"></script>
+    <script>Constant.run()</script>
+  </body>
+</html>

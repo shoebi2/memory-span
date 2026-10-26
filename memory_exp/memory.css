@@ -1,0 +1,38 @@
+/* 2019年版の memory.css に、2026年版で次を加えた：数字列の大きさを 48px に固定、回答欄を大きく、注意・ボタンの書式 */
+.disable-copy {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+input:read-only {
+  background-color: bisque
+}
+.center {
+  text-align: center;
+}
+#stimulus {
+  font-size: 48px;          /* 画面やブラウザによらず同じ大きさにする（2026年版） */
+  line-height: 1.3;
+  min-height: 1.3em;
+  margin: 0.4em 0;
+  letter-spacing: 0.05em;
+}
+#js-input-form {
+  font-size: 24px;
+  width: 14em;
+  padding: 0.15em 0.3em;
+  text-align: center;
+}
+.warn { color: #B4473C; font-weight: bold; min-height: 1.4em; }
+.strong { font-weight: bold; }
+.note { color: #555; }
+.reset { display: inline-block; margin-top: 2em; font-size: 0.85em; color: #777; }
+button { font-size: 16px; padding: 0.35em 0.9em; margin: 0.2em; }
+button.primary { font-weight: bold; }
+#resume { max-width: 40em; margin: 1.5em auto; padding: 1em 1.5em; border: 2px solid #3A5BA0; border-radius: 8px; text-align: center; }
+#setup p { margin: 0.8em 0; }
+#setup input { font-size: 18px; width: 5em; }
+#errors { color: #B4473C; font-weight: bold; text-align: left; display: inline-block; }
+#result { max-width: 60em; margin: 1em auto; text-align: left; }
+pre { white-space: pre; overflow-x: auto; }

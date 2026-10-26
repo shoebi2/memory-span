@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="memory.css">
+    <title>memory_practice</title>
+  </head>
+  <body>
+    <div id="resume" hidden></div>
+    <main class="center">
+      <h1>memory experiment</h1>
+      <h2 id="stimulus" class="disable-copy"></h2>
+      <input id="js-input-form" type="text" inputmode="numeric" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" readonly>
+      <p id="warn" class="warn"></p>
+    </main>
+    <div id="result"></div>
+    <script src="helpers_2019.js"></script>
+    <script src="core.js"></script>
+    <script src="updown.js"></script>
+    <script>UpDown.run({ mode: 'practice' })</script>
+  </body>
+</html>

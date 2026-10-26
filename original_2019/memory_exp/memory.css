@@ -1,0 +1,11 @@
+.disable-copy{	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	}
+input:read-only{
+    background-color: bisque
+	}
+.center{
+	text-align: center;
+}
