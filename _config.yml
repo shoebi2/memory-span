@@ -1,0 +1,5 @@
+# GitHub Pages で公開するときの設定
+# 学生が見るのは index.html と memory_exp/ だけにする（テストと2019年版の写しは公開しない）
+exclude:
+  - tests/
+  - original_2019/
